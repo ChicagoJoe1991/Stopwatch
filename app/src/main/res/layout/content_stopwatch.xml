@@ -30,11 +30,11 @@
             android:layout_marginTop="50dp"
             android:textSize="60dp" />
 
-        <Button1
+        <ButtonStart
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button1"
-            android:id="@+id/button1"
+            android:text="@string/buttonstart"
+            android:id="@+id/buttonstart"
             android:layout_below="@+id/textView2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
@@ -42,24 +42,24 @@
             android:width="300dp"
             />
 
-        <Button2
+        <ButtonStop
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button2"
-            android:id="@+id/button2"
-            android:layout_below="@+id/button1"
+            android:text="@string/buttonstop"
+            android:id="@+id/buttonstop"
+            android:layout_below="@+id/buttonstart"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:height="75dp"
             android:width="300dp"
             />
 
-        <Button3
+        <ButtonReset
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button3"
-            android:id="@+id/button3"
-            android:layout_below="@+id/button2"
+            android:text="@string/buttonreset"
+            android:id="@+id/buttonreset"
+            android:layout_below="@+id/buttonstop"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:height="75dp"

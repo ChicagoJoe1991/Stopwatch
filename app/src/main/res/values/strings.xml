@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Stopwatch</string>
     <string name="action_settings">Settings</string>
-    <string name="button1">START</string>
-    <string name="button2">STOP</string>
-    <string name="button3">RESET</string>
+    <string name="buttonstart">START</string>
+    <string name="buttonstop">STOP</string>
+    <string name="buttonreset">RESET</string>
 </resources>
