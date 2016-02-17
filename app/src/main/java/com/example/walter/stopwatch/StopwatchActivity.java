@@ -14,33 +14,24 @@ import android.widget.TextView;
 
 
 public class StopwatchActivity extends AppCompatActivity {
-
     private boolean running;
     private int seconds = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stopwatch);
         runTimer();
-
     }
-
-    protected void onClickStart(View view){
+    public void onClickStart(View view){
         running = true;
     }
-
-    protected void onClickStop(View view){
+    public void onClickStop(View view){
         running = false;
-
     }
-
-    protected void onClickReset(View view){
+    public void onClickReset(View view){
         running = false;
         seconds = 0;
-
     }
-
     private void runTimer(){
         //get the TextView
         final TextView timeView = (TextView) findViewById(R.id.time_view);
@@ -51,15 +42,14 @@ public class StopwatchActivity extends AppCompatActivity {
         handler.post(new Runnable() {
             @Override
             public void run() {
-
-
                 int hours = seconds / 3600;
                 int minutes = seconds / 60;
                 int secs = seconds % 60;
-
                 String time = String.format("%d:%02d:%02d", hours, minutes, secs);
                 timeView.setText(time);
-                if (running) seconds++;
+                if (running) {
+                    seconds++;
+                }
                 handler.postDelayed(this, 1000);
             }
         });
