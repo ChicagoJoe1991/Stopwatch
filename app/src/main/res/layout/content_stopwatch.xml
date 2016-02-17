@@ -28,9 +28,9 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-            android:textSize="60dp" />
+            android:textSize="60sp" />
 
-        <ButtonStart
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/buttonstart"
@@ -40,9 +40,10 @@
             android:layout_marginTop="40dp"
             android:height="75dp"
             android:width="300dp"
+            android:onClick="onClickStart"
             />
 
-        <ButtonStop
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/buttonstop"
@@ -52,9 +53,10 @@
             android:layout_marginTop="10dp"
             android:height="75dp"
             android:width="300dp"
+            android:onClick="onClickStop"
             />
 
-        <ButtonReset
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/buttonreset"
@@ -64,6 +66,7 @@
             android:layout_marginTop="10dp"
             android:height="75dp"
             android:width="300dp"
+            android:onClick="onClickReset"
             />
 
 
